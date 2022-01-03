@@ -15,7 +15,7 @@
         <dependency>
             <groupId>org.flowable</groupId>
             <artifactId>flowable-spring-boot-starter-actuator</artifactId>
-            <version>6.6.1-SNAPSHOT</version>
+            <version>6.7.1</version>
         </dependency>
         
         <dependency>
