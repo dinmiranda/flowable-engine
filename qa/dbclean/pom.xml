@@ -14,7 +14,7 @@
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
-      <version>1.2.132</version>
+      <version>2.0.206</version>
     </dependency>
     <dependency>
       <groupId>org.hsqldb</groupId>
@@ -72,17 +72,10 @@
             </goals>
             <configuration>
               <tasks>
-                <echo message="loading properties from ${user.home}/.activiti/${cfgdir}/build.${database}.properties" />
-                <property file="${user.home}/.activiti/${cfgdir}/build.${database}.properties" />
-                <echo message="cleaning db ${jdbc.url}" />
-                <sql driver="${jdbc.driver}" 
-                     password="${jdbc.password}" 
-                     url="${jdbc.url}" 
-                     userid="${jdbc.username}"
-                     onerror="continue"
-                     autocommit="true"
-                     classpathref="maven.test.classpath" 
-                     src="scripts/drop.activiti.${database}.sql"/>
+                <echo message="loading properties from ${user.home}/.activiti/${cfgdir}/build.${database}.properties"/>
+                <property file="${user.home}/.activiti/${cfgdir}/build.${database}.properties"/>
+                <echo message="cleaning db ${jdbc.url}"/>
+                <sql driver="${jdbc.driver}" password="${jdbc.password}" url="${jdbc.url}" userid="${jdbc.username}" onerror="continue" autocommit="true" classpathref="maven.test.classpath" src="scripts/drop.activiti.${database}.sql"/>
               </tasks>
             </configuration>
           </execution>
