@@ -10,7 +10,7 @@
 		<dependency>
 			<groupId>org.flowable</groupId>
 			<artifactId>flowable-engine</artifactId>
-			<version>6.6.1-SNAPSHOT</version>
+			<version>6.7.0</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -31,7 +31,7 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.28</version>
+			<version>1.7.34</version>
 		</dependency>
 	</dependencies>
 
